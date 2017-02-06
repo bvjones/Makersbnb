@@ -1,0 +1,68 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/rickclark/Documents/Makers/makersbnb/app/app.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/rickclark/Documents/Makers/makersbnb/app/dmconfig.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
+      "/Users/rickclark/Documents/Makers/makersbnb/app/server.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/features/hello_world_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1486385297
+  }
+}
