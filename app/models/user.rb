@@ -11,12 +11,16 @@ class User
   property :password_digest, BCryptHash
 
   attr_reader :password
+  attr_accessor :password_confirmation
 
-# def self.authenticate(email, password)
-#   user = first(email: email)
-#   if user && BCrypt::Password.new(user.password_digest) == password
-#     user
-#   else
-#     nil
-#   end
+  validates_confirmation_of :password_digest, :confirm => :password_confirmation
+
+  # def self.authenticate(email, password)
+  #   user = first(email: email)
+  #   if user && BCrypt::Password.new(user.password_digest) == password
+  #     user
+  #   else
+  #     nil
+  #   end
+  # end
 end
