@@ -43,9 +43,21 @@
         null,
         1,
         1,
+        null,
         1,
         1,
         1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -62,26 +74,38 @@
         1,
         null,
         1,
-        2,
-        null,
+        3,
         null,
         null
       ],
       "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/users.rb": [
         1,
         1,
-        1,
+        3,
         null,
         null,
         1,
-        1,
+        3,
         null,
         null,
         null,
-        1,
+        3,
+        2,
+        null,
         1,
         1,
         null,
+        null,
+        null
+      ],
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/web_helpers.rb": [
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
         null
       ],
       "/Users/benvaughan-jones/Projects/makersbnb/spec/features/hello_world_spec.rb": [
@@ -92,21 +116,20 @@
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/units/user_model_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
         1,
         1,
-        1,
-        1,
+        4,
+        null,
         1,
         1,
         1,
         1,
         null,
-        1,
         null,
         null
       ]
     },
-    "timestamp": 1486466397
+    "timestamp": 1486469544
   }
 }

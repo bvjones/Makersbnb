@@ -7,9 +7,12 @@ class MakersBnB < Sinatra::Base
     @user = User.new(name: params[:name],
                         username: params[:username],
                         email: params[:email],
-                        password: params[:password])
-    @user.save
-    p "User is here", @user
-    redirect to ('/')
+                        password_digest: params[:password])
+    if @user.save
+      redirect to('/')
+    else
+      flash.now[:errors] = @user.errors.full_messages
+      erb :'users/new'
+    end
   end
 end
