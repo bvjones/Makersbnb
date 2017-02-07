@@ -5,7 +5,8 @@ describe 'UNIT: User' do
     fill_in 'username', with: 'fred'
     fill_in 'email',   with: 'fred@example.com'
     fill_in 'password', with: 'fred123'
+    click_button('Submit')
 
-    expect {click_button('Submit') }.to change{User.count}.by(1)
+    expect(User.count).to eq 1
   end
 end
