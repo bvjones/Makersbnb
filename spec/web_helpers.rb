@@ -4,5 +4,5 @@ def sign_in
   fill_in 'username', with: 'fred'
   fill_in 'email',   with: 'fred@example.com'
   fill_in 'password', with: 'fred123'
-  click_button 'Submit'
+  click_button 'Sign Up'
 end

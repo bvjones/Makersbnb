@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/benvaughan-jones/Projects/makersbnb/app/app.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/app/app.rb": [
         null,
         null,
         null,
@@ -27,7 +27,7 @@
         null,
         1
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/app/dmconfig.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/app/dmconfig.rb": [
         1,
         1,
         null,
@@ -37,7 +37,7 @@
         1,
         1
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/app/models/user.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/app/models/user.rb": [
         1,
         1,
         null,
@@ -61,7 +61,7 @@
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/app/server.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/app/server.rb": [
         1,
         null,
         1,
@@ -78,7 +78,7 @@
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/users.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/app/controllers/users.rb": [
         1,
         1,
         3,
@@ -98,7 +98,7 @@
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/web_helpers.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/spec/web_helpers.rb": [
         1,
         3,
         3,
@@ -108,7 +108,7 @@
         3,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/hello_world_spec.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/hello_world_spec.rb": [
         1,
         1,
         1,
@@ -116,7 +116,7 @@
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
+      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
         1,
         1,
         4,
@@ -130,6 +130,6 @@
         null
       ]
     },
-    "timestamp": 1486469544
+    "timestamp": 1486472024
   }
 }
