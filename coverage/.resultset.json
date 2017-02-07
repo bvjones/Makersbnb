@@ -35,6 +35,7 @@
         null,
         null,
         1,
+        1,
         1
       ],
       "/Users/Mike/Google Drive/Projects/makersbnb/app/models/user.rb": [
@@ -79,6 +80,8 @@
         null,
         null,
         1,
+        1,
+        1,
         null,
         null
       ],
@@ -99,12 +102,14 @@
         1,
         1,
         1,
-        null,
         1,
+        null,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1486464217
+    "timestamp": 1486465859
   }
 }

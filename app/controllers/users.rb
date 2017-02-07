@@ -4,10 +4,12 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users' do
-    @user = User.create(name: params[:name],
+    @user = User.new(name: params[:name],
                         username: params[:username],
                         email: params[:email],
                         password: params[:password])
+    @user.save
+    p "User is here", @user
     redirect to ('/')
   end
 end
