@@ -17,6 +17,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require 'database_cleaner'
+require_relative 'web_helpers'
 
 Capybara.app = MakersBnB
 
@@ -31,17 +32,17 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  # config.before(:suite) do
-  #   DatabaseCleaner.strategy = :transaction
-  #   DatabaseCleaner.clean_with(:truncation)
-  # end
-  #
-  # config.before(:each) do
-  #   DatabaseCleaner.start
-  # end
-  #
-  # config.append_after(:each) do
-  #   DatabaseCleaner.clean
-  # end
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.append_after(:each) do
+    DatabaseCleaner.clean
+  end
 
 end
