@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/app.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/app.rb": [
         null,
         null,
         null,
@@ -27,18 +27,17 @@
         null,
         1
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/dmconfig.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/dmconfig.rb": [
         1,
         1,
         null,
         1,
         null,
         null,
-        1,
         1,
         1
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/models/user.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/models/user.rb": [
         1,
         1,
         null,
@@ -50,7 +49,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/server.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/server.rb": [
         1,
         null,
         1,
@@ -68,7 +67,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/controllers/users.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/users.rb": [
         1,
         1,
         1,
@@ -85,7 +84,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/hello_world_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/hello_world_spec.rb": [
         1,
         1,
         1,
@@ -93,8 +92,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/units/user_model_spec.rb": [
-        1,
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/units/user_model_spec.rb": [
         1,
         1,
         1,
@@ -104,12 +102,11 @@
         1,
         1,
         null,
-        null,
-        null,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1486465859
+    "timestamp": 1486466397
   }
 }
