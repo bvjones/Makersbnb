@@ -4,12 +4,12 @@
 
 feature 'FEATURE: Creating spaces' do
   scenario'user is able to add a new space' do
-    visit'/'
-    expect(page).to have_button("list New Space")
+    visit '/'
+    expect(page).to have_link("List New Space")
   end
 
   scenario 'user is able to list a space' do
-    visit '/space/new'
+    visit '/spaces/new'
     expect(page.status_code).to eq(200)
   end
 end

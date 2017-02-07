@@ -19,7 +19,6 @@ require_relative 'dmconfig'
 require_relative 'server'
 #ADD CONTROLLER REQUIRES HERE!!!!
 require_relative 'controllers/users.rb'
-# require_relative 'controllers/user.rb'
-require_relative 'controllers/space'
+require_relative 'controllers/spaces.rb'
 
 MakersBnB.run! if $0 == 'app/app.rb'
