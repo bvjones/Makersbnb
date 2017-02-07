@@ -11,7 +11,6 @@ class Space
   property :from, Date, required: true
   property :to, Date, required: true
 
-
-  # belongs_to :user
+  belongs_to :user
 
 end
