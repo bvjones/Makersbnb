@@ -10,7 +10,6 @@ class MakersBnB < Sinatra::Base
   use Rack::MethodOverride
 
   get '/' do
-    "Hello World"
-    # erb :index
+      erb :index
   end
 end
