@@ -1,7 +1,11 @@
 <div class="container" style="border: 1px solid black;">
   <div class="row">
     <div class="col-12">
-      <p>Hello World</p>
+      <%if @current_user%>
+          <p>Hello <%=@current_user.username%></p>
+      <%else%>
+        <p>Hello World!</p>
+      <%end%>
     </div>
   </div>
 </div>
