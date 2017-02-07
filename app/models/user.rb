@@ -10,6 +10,8 @@ class User
   property :email, String, format: :email_address, required: true, unique: true
   property :password_digest, BCryptHash
 
+  has n, :spaces
+
   attr_reader :password
   attr_accessor :password_confirmation
 

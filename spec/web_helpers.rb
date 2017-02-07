@@ -17,3 +17,13 @@ def incorrect_sign_up
   fill_in 'password_confirmation', with: 'fred'
   click_button 'Sign Up'
 end
+
+def create_new_space(name:, description:, price:, from:, to:)
+  visit '/spaces/new'
+  fill_in :name, with: name
+  fill_in :description, with: description
+  fill_in :price, with: price
+  fill_in :from, with: from
+  fill_in :to, with: to
+  click_button("list_new_space")
+end
