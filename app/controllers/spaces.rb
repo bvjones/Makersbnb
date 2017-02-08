@@ -2,7 +2,7 @@ class MakersBnB < Sinatra::Base
 
   helpers do
     def recent_spaces
-      @recent_spaces ||= Spaces.last(50)
+      @recent_spaces ||= Space.last(50)
     end
   end
 
