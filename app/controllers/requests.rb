@@ -11,8 +11,13 @@ class MakersBnB < Sinatra::Base
 
   get '/requests' do
     @received_requests = current_user.spaces.requests
-    p @made_requests = current_user.requests
+    @made_requests = current_user.requests
     erb :'requests/requests'
   end
-  
+
+  get '/requests/:id' do
+    @request = Request.get(params['id'])
+    erb :'requests/request'
+  end
+
 end
