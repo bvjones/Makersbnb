@@ -1,0 +1,24 @@
+<div class="row">
+  <% @made_requests.each do |request| %>
+  <div class="col-12 space my-1">
+    <a href="/spaces/<%= request.id %>">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title"><%= request.space.name %></h4>
+        <h6 class="card-subtitle mb-2 text-muted">Owner - <%= request.space.user.name %></h6>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="row">
+          <div class="col-8">
+            <p class="card-text">Date requested <%= request.date.strftime("%d/%m/%y")%></p>
+          </div>
+          <div class="col-4">
+            <p class="card-text">Current status - <%= request.status %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+  <% end %>
+</div>
