@@ -14,4 +14,10 @@ class Space
   belongs_to :user
   has n, :requests
 
+  def booked_dates
+    array = requests.map { |request|
+      request.date if request.status == "Approved"
+    }
+  end
+
 end
