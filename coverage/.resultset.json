@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/app.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/app.rb": [
         1,
         1,
         1,
@@ -17,7 +17,7 @@
         null,
         1
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/dmconfig.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/dmconfig.rb": [
         1,
         1,
         null,
@@ -28,7 +28,7 @@
         1,
         1
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/models/space.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/models/space.rb": [
         1,
         null,
         1,
@@ -47,7 +47,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/models/user.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/models/user.rb": [
         1,
         1,
         null,
@@ -78,7 +78,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/models/request.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/models/request.rb": [
         1,
         null,
         1,
@@ -92,7 +92,7 @@
         1,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/server.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/server.rb": [
         1,
         null,
         1,
@@ -115,7 +115,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/controllers/users.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/users.rb": [
         1,
         1,
         18,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/controllers/spaces.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/spaces.rb": [
         1,
         null,
         1,
@@ -176,7 +176,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/controllers/sessions.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/sessions.rb": [
         1,
         null,
         1,
@@ -201,7 +201,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/app/controllers/requests.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/requests.rb": [
         1,
         null,
         1,
@@ -217,7 +217,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/web_helpers.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/web_helpers.rb": [
         1,
         17,
         17,
@@ -248,7 +248,7 @@
         10,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/creating_request_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/creating_request_spec.rb": [
         1,
         null,
         2,
@@ -280,7 +280,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/list_new_space_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/list_new_space_spec.rb": [
         null,
         null,
         null,
@@ -340,14 +340,14 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/see_spaces_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/see_spaces_spec.rb": [
         1,
         3,
         3,
         3,
         3,
         3,
-        1,
+        2,
         2,
         2,
         2,
@@ -388,7 +388,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/signing_in_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_in_spec.rb": [
         1,
         1,
         1,
@@ -416,7 +416,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/signing_out_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_out_spec.rb": [
         1,
         1,
         1,
@@ -435,7 +435,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
         1,
         1,
         4,
@@ -450,7 +450,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/features/view_single_space_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/view_single_space_spec.rb": [
         1,
         null,
         2,
@@ -469,7 +469,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/unit/request_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/unit/request_spec.rb": [
         1,
         null,
         2,
@@ -491,7 +491,7 @@
         null,
         null
       ],
-      "/Users/Mike/Google Drive/Projects/makersbnb/spec/unit/user_spec.rb": [
+      "/Users/benvaughan-jones/Projects/makersbnb/spec/unit/user_spec.rb": [
         1,
         null,
         3,
@@ -522,6 +522,6 @@
         null
       ]
     },
-    "timestamp": 1486557351
+    "timestamp": 1486565565
   }
 }

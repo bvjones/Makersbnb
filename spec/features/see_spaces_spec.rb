@@ -4,7 +4,7 @@ feature "FEATURE: See Spaces" do
   let(:price) { 200 }
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
-  let(:current_user) { "Rick" }
+  let(:test_user) { "Rick" }
   let(:username) { "RICK" }
   let(:email) { "rick@rick.com" }
   let(:password_digest) { "rick" }
@@ -27,7 +27,7 @@ feature "FEATURE: See Spaces" do
   end
 
   scenario "able to display multiple spaces" do
-    current_user = User.create(name: name,
+    current_user = User.create(name: test_user,
                         username: username,
                         email: email,
                         password_digest: password_digest,
