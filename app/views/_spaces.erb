@@ -1,6 +1,6 @@
 <% recent_spaces.each do |space| %>
   <ul>
-    <li><%= space.name %></li>
+    <li><a href="/spaces/<%= space.id %>"><%= space.name %></a></li>
     <li><%= space.description %></li>
     <li><%= space.price %></li>
     <li><%= space.from.strftime("%d/%m/%y") %></li>
