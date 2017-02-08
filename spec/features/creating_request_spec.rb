@@ -15,17 +15,16 @@ feature 'FEATURE: Creating a request' do
 
   xscenario 'when not logged in' do
     visit '/' #update later
-    expect(page).not_to have_button("Request to Book")
+    expect(page).not_to have_button("request_to_book")
   end
 
-  xscenario 'logged in user is able to book' do
+  scenario 'logged in user is able to book' do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)
     space_id = Space.first.id
     visit "/spaces/#{space_id}" #update later
     fill_in(:date, with: "31/01/2017")
-    click_button('Request to Book')
-    expect(Request.count).to change
+    expect{click_button('request_to_book')}.to change{Request.count}.by(1)
   end
 
 end
