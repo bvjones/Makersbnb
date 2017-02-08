@@ -1,3 +1,5 @@
+//GENERAL STYLES
+
 html, body {
 	margin:0;
 	padding:0;
@@ -10,7 +12,6 @@ html, body {
   padding-bottom: 35px;
 }
 
-
 .main-content {
   min-height: 100%;
 }
@@ -20,4 +21,30 @@ html, body {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+//SPACES VIEW STYLES
+
+.space {
+	a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}
+
+//SPACE VIEW STYLES
+
+.label-line-height {
+	line-height: 2.7;
 }

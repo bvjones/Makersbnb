@@ -17,4 +17,19 @@ html, body {
   left: 0;
   width: 100%; }
 
+.full-width {
+  width: 100%; }
+
+.btn {
+  cursor: pointer; }
+
+.space a {
+  color: inherit; }
+  .space a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+.label-line-height {
+  line-height: 2.7; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 text-center mb-4">
       <%if @current_user%>
-          <p>Hello <%=@current_user.username%></p>
+          <h3>Hello, <%=@current_user.username%>!</h3>
       <%end%>
-      <%= partial :spaces %>
+    </div>
+      <div class="col-12">
+        <%= partial :spaces %>
+      </div>
     </div>
   </div>
 </div>

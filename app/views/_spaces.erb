@@ -1,9 +1,25 @@
-<% recent_spaces.each do |space| %>
-  <ul>
-    <li><a href="/spaces/<%= space.id %>"><%= space.name %></a></li>
-    <li><%= space.description %></li>
-    <li><%= space.price %></li>
-    <li><%= space.from.strftime("%d/%m/%y") %></li>
-    <li><%= space.to.strftime("%d/%m/%y") %></li>
-  </ul>
-<% end %>
+<div class="row">
+    <% recent_spaces.each do |space| %>
+    <div class="col-12 space my-1">
+      <a href="/spaces/<%= space.id %>">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title"><%= space.name %></h4>
+          <h6 class="card-subtitle mb-2 text-muted">Listed by - <%= space.user.name %></h6>
+          <p class="card-text text-center"><%= space.description %></p>
+        </div>
+        <div class="card-footer text-muted">
+          <div class="row">
+            <div class="col-8">
+              <p class="card-text">Available from - <%= space.from.strftime("%d/%m/%y")%> to <%= space.to.strftime("%d/%m/%y")%></p>
+            </div>
+            <div class="col-4">
+              <p class="card-text">Price per night £<%= space.price %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+    <% end %>
+  </div>
