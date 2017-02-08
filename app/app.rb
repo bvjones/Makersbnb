@@ -10,4 +10,5 @@ require_relative 'controllers/users.rb'
 require_relative 'controllers/spaces.rb'
 require_relative 'controllers/sessions.rb'
 
+
 MakersBnB.run! if $0 == 'app/app.rb'

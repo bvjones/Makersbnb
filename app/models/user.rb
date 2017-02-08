@@ -11,6 +11,7 @@ class User
   property :password_digest, BCryptHash
 
   has n, :spaces
+  has n, :requests
 
   attr_reader :password
   attr_accessor :password_confirmation
