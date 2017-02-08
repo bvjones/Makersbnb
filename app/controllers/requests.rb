@@ -14,4 +14,5 @@ class MakersBnB < Sinatra::Base
     p @made_requests = current_user.requests
     erb :'requests/requests'
   end
+  
 end
