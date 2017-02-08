@@ -17,4 +17,10 @@ html, body {
   left: 0;
   width: 100%; }
 
+.space a {
+  color: inherit; }
+  .space a:hover {
+    text-decoration: none;
+    color: inherit; }
+
 /*# sourceMappingURL=main.css.map */

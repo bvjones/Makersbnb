@@ -4,7 +4,10 @@
       <%if @current_user%>
           <p>Hello <%=@current_user.username%></p>
       <%end%>
-      <%= partial :spaces %>
+    </div>
+      <div class="col-12">
+        <%= partial :spaces %>
+      </div>
     </div>
   </div>
 </div>

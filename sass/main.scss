@@ -21,3 +21,13 @@ html, body {
   left: 0;
   width: 100%;
 }
+
+.space {
+	a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}
