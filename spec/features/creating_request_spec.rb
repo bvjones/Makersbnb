@@ -22,7 +22,7 @@ feature 'FEATURE: Creating a request' do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)
     space_id = Space.first.id
-    visit "/spaces/#{space_id}" #update later
+    visit "/spaces/#{space_id}"
     fill_in(:date, with: "31/01/2017")
     expect{click_button('request_to_book')}.to change{Request.count}.by(1)
   end
