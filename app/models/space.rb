@@ -12,5 +12,6 @@ class Space
   property :to, Date, required: true
 
   belongs_to :user
+  has n, :requests
 
 end

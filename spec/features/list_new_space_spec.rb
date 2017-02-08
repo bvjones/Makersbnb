@@ -7,7 +7,7 @@ feature 'FEATURE: Creating spaces' do
   let(:name) { "Pedro's House" }
   let(:description) { "Very nice" }
   let(:price) { 200 }
-  let(:from) { "20/03/2017" }
+  let(:from) { "20/01/2017" }
   let(:to) { "20/02/2017" }
 
   scenario'user is able to add a new space' do
