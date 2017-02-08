@@ -24,7 +24,7 @@ feature 'FEATURE: Creating spaces' do
   scenario 'user is able to list a space' do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)
-    expect(page).to have_current_path('/')
+    expect(page).to have_current_path('/spaces')
     expect(Space.count).to eq 1
   end
 

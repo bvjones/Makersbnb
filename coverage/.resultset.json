@@ -1,26 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/app/app.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/app/app.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/app/app.rb": [
         1,
         1,
         1,
         1,
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
         null,
         1,
         1,
@@ -31,7 +16,7 @@
         null,
         1
       ],
-      "/Users/pedrocastanheira/Projects/makersbnb/app/dmconfig.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/app/dmconfig.rb": [
         1,
         1,
         null,
@@ -41,11 +26,7 @@
         1,
         1
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/app/dmconfig.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/app/models/space.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+      "/Users/rickclark/Documents/Makers/makersbnb/app/models/space.rb": [
         1,
         null,
         1,
@@ -63,11 +44,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/app/models/user.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/app/models/user.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+      "/Users/rickclark/Documents/Makers/makersbnb/app/models/user.rb": [
         1,
         1,
         null,
@@ -97,11 +74,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/app/server.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/app/server.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+      "/Users/rickclark/Documents/Makers/makersbnb/app/server.rb": [
         1,
         null,
         1,
@@ -115,57 +88,30 @@
         null,
         1,
         1,
-<<<<<<< HEAD
-        8,
-=======
-        20,
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+        23,
         null,
         null,
         null,
         1,
-<<<<<<< HEAD
-        8,
-        8,
+        17,
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/users.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/app/controllers/users.rb": [
         1,
         1,
-        7,
-        null,
-        null,
-        1,
-        7,
-=======
-        14,
         14,
         null,
-        null
-      ],
-      "/Users/pedrocastanheira/Projects/makersbnb/app/controllers/users.rb": [
-        1,
-        1,
-        13,
-        null,
         null,
         1,
-        13,
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+        14,
         null,
         null,
         null,
         null,
-<<<<<<< HEAD
-        7,
-        5,
-        5,
-=======
-        13,
-        11,
-        11,
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+        14,
+        12,
+        12,
         null,
         2,
         2,
@@ -173,11 +119,20 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/app/controllers/sessions.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/app/controllers/spaces.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/app/controllers/spaces.rb": [
         1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        17,
+        17,
+        null,
+        null,
         1,
         11,
         null,
@@ -198,8 +153,7 @@
         null,
         null
       ],
-      "/Users/pedrocastanheira/Projects/makersbnb/app/controllers/sessions.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+      "/Users/rickclark/Documents/Makers/makersbnb/app/controllers/sessions.rb": [
         1,
         null,
         1,
@@ -224,27 +178,15 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/web_helpers.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/web_helpers.rb": [
         1,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/spec/web_helpers.rb": [
-        1,
-        12,
-        12,
-        12,
-        12,
-        12,
-        12,
-        12,
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
         null,
         null,
         1,
@@ -267,10 +209,7 @@
         6,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/hello_world_spec.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/spec/features/list_new_space_spec.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/features/list_new_space_spec.rb": [
         null,
         null,
         null,
@@ -294,7 +233,6 @@
         0,
         null,
         null,
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
         1,
         1,
         1,
@@ -327,52 +265,36 @@
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_in_spec.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/spec/features/signing_in_spec.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/features/see_spaces_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        0,
         null,
         null,
         null
       ],
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_out_spec.rb": [
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/features/signing_in_spec.rb": [
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         null,
@@ -385,11 +307,26 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/spec/features/signing_up_user_spec.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/features/signing_out_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/features/signing_up_user_spec.rb": [
         1,
         1,
         4,
@@ -404,11 +341,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/benvaughan-jones/Projects/makersbnb/spec/unit/user_spec.rb": [
-=======
-      "/Users/pedrocastanheira/Projects/makersbnb/spec/unit/user_spec.rb": [
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+      "/Users/rickclark/Documents/Makers/makersbnb/spec/unit/user_spec.rb": [
         1,
         null,
         3,
@@ -439,10 +372,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1486487783
-=======
-    "timestamp": 1486488080
->>>>>>> 9364659072359df13b8ac4d313a8c71967a0ae1b
+    "timestamp": 1486547242
   }
 }

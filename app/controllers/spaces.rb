@@ -1,4 +1,16 @@
 class MakersBnB < Sinatra::Base
+
+  helpers do
+    def recent_spaces
+      @recent_spaces ||= Spaces.last(50)
+    end
+  end
+
+  get '/spaces' do
+    @current_user = current_user
+    erb :index
+  end
+
   get '/spaces/new' do
     erb :'spaces/new'
   end

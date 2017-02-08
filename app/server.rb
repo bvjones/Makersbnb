@@ -16,7 +16,6 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/' do
-    @current_user = current_user
-    erb :index
+    redirect('/spaces')
   end
 end
