@@ -1,5 +1,6 @@
 class MakersBnB < Sinatra::Base
   get '/users/new' do
+    @background_class = "sign-up-background"
     erb :'users/new'
   end
 
@@ -14,6 +15,7 @@ class MakersBnB < Sinatra::Base
       redirect to('/')
     else
       flash.now[:errors] = @user.errors.full_messages
+      @background_class = "sign-up-background"
       erb :'users/new'
     end
   end

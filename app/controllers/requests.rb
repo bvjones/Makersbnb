@@ -32,5 +32,4 @@ class MakersBnB < Sinatra::Base
     flash.keep[:notice] = "Request has been #{params[:update_status]}"
     redirect '/requests'
   end
-
 end

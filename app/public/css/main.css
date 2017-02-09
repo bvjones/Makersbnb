@@ -1,27 +1,38 @@
-html, body {
-  margin: 0;
-  padding: 0;
+html {
   height: 100%; }
 
-#main-wrapper {
-  height: 100%;
-  position: relative;
-  padding-bottom: 35px; }
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; }
 
 .main-content {
   min-height: 100%; }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%; }
-
 .full-width {
   width: 100%; }
 
+.container-top-margin {
+  margin-top: 15%; }
+
 .btn {
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif; }
+  .btn:hover {
+    background-color: #FF9900;
+    transition: 0.7s ease; }
+
+.main-tint-bkgrnd {
+  background-color: #CC6600; }
+
+.light-text {
+  color: white; }
+  .light-text a {
+    color: white; }
 
 .space a {
   color: inherit; }
@@ -32,20 +43,52 @@ html, body {
 .label-line-height {
   line-height: 2.7; }
 
-.datepicker tbody {
-  background-color: #9a9a9a !important; }
+.datepicker {
+  margin: 0 auto; }
+  .datepicker tbody {
+    background-color: #9a9a9a !important; }
 
 .day {
   border-radius: 0 !important;
   background-color: white !important; }
   .day:hover {
-    background-color: #c76b41 !important;
+    background-color: #CC6600 !important;
     transition: 0.5s ease;
     color: white; }
+
+.day.active {
+  background-color: #CC6600 !important;
+  transition: 0.5s ease;
+  color: white; }
 
 .disabled, .disabled-date {
   background-color: #9a9a9a !important; }
   .disabled:hover, .disabled-date:hover {
     background-color: #9a9a9a !important; }
+
+.index-background {
+  background: url("/img/home-bkgrnd.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.space-background {
+  background: url("/img/space-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.sign-in-background {
+  background: url("/img/sign-in-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.sign-up-background {
+  background: url("/img/sign-up-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.list-new-space-background {
+  background: url("/img/list-new-space-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
 
 /*# sourceMappingURL=main.css.map */

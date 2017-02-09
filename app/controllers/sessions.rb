@@ -1,6 +1,7 @@
 class MakersBnB < Sinatra::Base
 
   get '/sessions/new' do
+    @background_class = "sign-in-background"
     erb :'sessions/new'
   end
 
@@ -11,6 +12,7 @@ class MakersBnB < Sinatra::Base
       redirect to'/'
     else
       flash.now[:errors] = ['The email or password is incorrect']
+      @background_class = "sign-in-background"
       erb :'sessions/new'
     end
   end
