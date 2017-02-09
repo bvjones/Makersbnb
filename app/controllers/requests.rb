@@ -16,7 +16,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/requests/:id' do
-    @request = Request.get(params['id'])
+    @single_request = Request.get(params['id'])
     erb :'requests/request'
   end
 
