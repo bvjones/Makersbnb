@@ -20,4 +20,10 @@ class MakersBnB < Sinatra::Base
     erb :'requests/request'
   end
 
+  patch '/requests/:id' do
+    Request.get(params['id']).update(status: params[:update_status])
+    flash.keep[:notice] = "Request has been #{params[:update_status]}"
+    redirect '/requests'
+  end
+
 end
