@@ -1,3 +1,4 @@
+require 'date'
 describe Space do
 
   let(:name) { "Pedro's House" }
@@ -12,14 +13,14 @@ describe Space do
   let(:request_two) { double("Request") }
   let(:requests) { [request_one, request_two] }
 
-  xdescribe "#booked_dates" do
+  describe "#booked_dates" do
     it "returns an array of booked dates" do
       allow(space).to receive(:requests) { requests }
-      allow(request_one).to receive(:status) { "Approved" }
-      allow(request_one).to receive(:date) { "20/02/2017" }
-      allow(request_two).to receive(:status) { "Approved" }
-      allow(request_two).to receive(:date) { "21/02/2017" }
-      expect(space.booked_dates).to eq(["20/02/2017","21/02/2017"])
+      allow(request_one).to receive(:status) { "confirmed" }
+      allow(request_one).to receive(:date) { Date.new(2017,02,18) }
+      allow(request_two).to receive(:status) { "confirmed" }
+      allow(request_two).to receive(:date) { Date.new(2017,02,19) }
+      expect(space.booked_dates).to eq(["18/02/2017","19/02/2017"])
     end
   end
 

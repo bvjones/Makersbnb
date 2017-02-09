@@ -18,9 +18,10 @@ feature "FEATURE: signing in" do
     end
   end
 
-  xdescribe 'when signed in' do
+  describe 'when signed in' do
     scenario 'cant see the sign in button' do
-    expect(page).not_to have_content('Sign In')
+      sign_up
+      expect(page).not_to have_content('Sign In')
     end
   end
 end

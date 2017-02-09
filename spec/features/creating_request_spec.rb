@@ -30,7 +30,7 @@ feature 'FEATURE: Creating a request' do
     expect(page).to have_content("Your request has been sent!")
   end
 
-  xscenario 'cant select dates that have already been approved' do
+  scenario 'cant select dates that have already been approved' do
     current_user = User.create(name: test_user,
                         username: username,
                         email: email,
@@ -44,9 +44,10 @@ feature 'FEATURE: Creating a request' do
                                         )
     space_id = Space.first.id
     existing_request = Request.create(date: "25/03/2017",
-                                      status: "Approved",
-                                      user_id: user_id,
+                                      status: "confirmed",
+                                      user_id: current_user.id,
                                       space_id: space_id )
+    sign_up
     visit "/spaces/#{space_id}"
     fill_in(:date, with: "25/03/2017")
     expect{click_button('request_to_book')}.not_to change{Request.count}

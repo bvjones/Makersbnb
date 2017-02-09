@@ -2,12 +2,18 @@ class MakersBnB < Sinatra::Base
 
   post '/requests' do
     user_id = current_user.id
-    Request.create( date: params[:date],
-                    status: :unconfirmed,
-                    user_id: user_id,
-                    space_id: params[:space_id] )
-    flash.keep[:notice]="Your request has been sent!" 
-    redirect '/'
+    @space = Space.get(params[:space_id])
+    if !@space.booked_dates.include?(params[:date])
+      Request.create( date: params[:date],
+                      status: :unconfirmed,
+                      user_id: user_id,
+                      space_id: params[:space_id] )
+      flash.keep[:notice]="Your request has been sent!"
+      redirect '/'
+    else
+      flash.keep[:error] = ["The selected date is not available"]
+      redirect '/requests'
+    end
   end
 
   get '/requests' do

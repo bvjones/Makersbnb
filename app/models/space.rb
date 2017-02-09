@@ -16,7 +16,7 @@ class Space
 
   def booked_dates
     array = requests.map { |request|
-      request.date.strftime("%d/%m/%Y") if request.status == "unconfirmed"
+      request.date.strftime("%d/%m/%Y") if request.status == "confirmed"
     }
   end
 
