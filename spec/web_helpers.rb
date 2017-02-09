@@ -48,6 +48,6 @@ end
 def make_book(id)
   space_id = id
   visit "/spaces/#{space_id}" #update later
-  fill_in(:date, with: "31/01/2017")
+  page.execute_script("$('#hidden_date').val('31/03/2017')")
   click_button('request_to_book')
 end

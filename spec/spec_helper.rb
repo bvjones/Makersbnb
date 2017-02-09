@@ -20,6 +20,9 @@ require 'database_cleaner'
 require_relative 'web_helpers'
 require 'date'
 
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
+
 Capybara.app = MakersBnB
 
 RSpec.configure do |config|
@@ -34,7 +37,7 @@ RSpec.configure do |config|
   end
 
   config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.clean_with(:truncation)
   end
 

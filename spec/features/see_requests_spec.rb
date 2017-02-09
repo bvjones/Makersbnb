@@ -10,7 +10,7 @@ describe 'FEATURE: Requests view' do
     let(:from) { "20/01/2017" }
     let(:to) { "20/02/2017" }
 
-  scenario 'when logged in, a user is able to see received requests' do
+  scenario 'when logged in, a user is able to see received requests', :js => true do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)
     click_button('Sign Out')
@@ -22,7 +22,7 @@ describe 'FEATURE: Requests view' do
     expect(page).to have_content("Fred's House")
   end
 
-  scenario 'when logged in, a user is able to see sent requests' do
+  scenario 'when logged in, a user is able to see sent requests', :js => true do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)
     click_button('Sign Out')
