@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 //CALENDAR STYLES
 
 .datepicker {
+	margin: 0 auto;
 	tbody {
 		background-color: $disabled-date-col !important;
 	}
@@ -98,6 +99,12 @@ h1, h2, h3, h4, h5, h6 {
 		transition: 0.5s ease;
 		color: $white-text-col;
 	}
+}
+
+.day.active {
+	background-color: $date-hover-col !important;
+	transition: 0.5s ease;
+	color: $white-text-col;
 }
 
 .disabled, .disabled-date {
