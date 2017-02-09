@@ -11,8 +11,19 @@ class MakersBnB < Sinatra::Base
 
   get '/requests' do
     @received_requests = current_user.spaces.requests
-    p @made_requests = current_user.requests
+    @made_requests = current_user.requests
     erb :'requests/requests'
   end
-  
+
+  get '/requests/:id' do
+    @single_request = Request.get(params['id'])
+    erb :'requests/request'
+  end
+
+  patch '/requests/:id' do
+    Request.get(params['id']).update(status: params[:update_status])
+    flash.keep[:notice] = "Request has been #{params[:update_status]}"
+    redirect '/requests'
+  end
+
 end
