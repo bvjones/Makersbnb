@@ -32,7 +32,7 @@ describe 'FEATURE: Requests view' do
     expect(page).to have_content("Fred's House")
   end
 
-  xscenario 'when not logged in, a user is not able to see requests' do
+  scenario 'when not logged in, a user is not able to see requests' do
     visit '/'
     expect(page).not_to have_link("Requests")
   end

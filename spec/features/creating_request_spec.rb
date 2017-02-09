@@ -11,15 +11,12 @@ feature 'FEATURE: Creating a request' do
   let(:password_digest) { "rick" }
   let(:password_confirmation) { "rick" }
 
-  xscenario 'logged in user is able to create a request' do
+  scenario 'when not logged in' do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)
-    visit '/' #update later
-    expect(page).to have_button("Request to Book")
-  end
-
-  xscenario 'when not logged in' do
-    visit '/' #update later
+    click_button("Sign Out")
+    visit '/'
+    click_link("Pedro's House")
     expect(page).not_to have_button("request_to_book")
   end
 
@@ -30,6 +27,7 @@ feature 'FEATURE: Creating a request' do
     visit "/spaces/#{space_id}"
     fill_in(:date, with: "31/01/2017")
     expect{click_button('request_to_book')}.to change{Request.count}.by(1)
+    expect(page).to have_content("Your request has been sent!")
   end
 
   xscenario 'cant select dates that have already been approved' do

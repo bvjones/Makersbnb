@@ -6,6 +6,7 @@ class MakersBnB < Sinatra::Base
                     status: :unconfirmed,
                     user_id: user_id,
                     space_id: params[:space_id] )
+    flash.keep[:notice]="Your request has been sent!" 
     redirect '/'
   end
 

@@ -9,8 +9,9 @@ feature 'Signing out' do
     end
   end
 
-  xdescribe 'when not signed in' do
+  describe 'when not signed in' do
     scenario 'cant see the sign out button' do
+    visit '/'
     expect(page).not_to have_content('Sign Out')
     end
   end

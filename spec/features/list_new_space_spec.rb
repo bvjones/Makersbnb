@@ -16,7 +16,7 @@ feature 'FEATURE: Creating spaces' do
     expect(page).to have_link("List New Space")
   end
 
-  xscenario 'when user is not signed in List New Space button should not be available' do
+  scenario 'when user is not signed in List New Space button should not be available' do
     visit '/'
     expect(page).not_to have_link("List New Space")
   end
