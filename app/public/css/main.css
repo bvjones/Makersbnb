@@ -10,10 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 #main-wrapper {
   height: 100%;
   position: relative;
-  padding-bottom: 35px;
-  background: url("/img/home-bkgrnd.jpg");
-  background-size: cover;
-  background-repeat: repeat-y; }
+  padding-bottom: 35px; }
 
 .main-content {
   min-height: 92%; }
@@ -66,5 +63,30 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #9a9a9a !important; }
   .disabled:hover, .disabled-date:hover {
     background-color: #9a9a9a !important; }
+
+.index-background {
+  background: url("/img/home-bkgrnd.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.space-background {
+  background: url("/img/space-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.sign-in-background {
+  background: url("/img/sign-in-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.sign-up-background {
+  background: url("/img/sign-up-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.list-new-space-background {
+  background: url("/img/list-new-space-background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y; }
 
 /*# sourceMappingURL=main.css.map */
