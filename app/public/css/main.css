@@ -32,4 +32,20 @@ html, body {
 .label-line-height {
   line-height: 2.7; }
 
+.datepicker tbody {
+  background-color: #9a9a9a !important; }
+
+.day {
+  border-radius: 0 !important;
+  background-color: white !important; }
+  .day:hover {
+    background-color: #c76b41 !important;
+    transition: 0.5s ease;
+    color: white; }
+
+.disabled, .disabled-date {
+  background-color: #9a9a9a !important; }
+  .disabled:hover, .disabled-date:hover {
+    background-color: #9a9a9a !important; }
+
 /*# sourceMappingURL=main.css.map */

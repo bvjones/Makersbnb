@@ -1,3 +1,10 @@
+// VARIABLES
+
+$disabled-date-col: rgb(154, 154, 154);
+$enabled-date-col: rgb(255, 255, 255);
+$date-hover-col: rgb(199, 107, 65);
+$white-text-col: rgb(255, 255, 255);
+
 //GENERAL STYLES
 
 html, body {
@@ -47,4 +54,29 @@ html, body {
 
 .label-line-height {
 	line-height: 2.7;
+}
+
+//CALENDAR STYLES
+
+.datepicker {
+	tbody {
+		background-color: $disabled-date-col !important;
+	}
+}
+
+.day {
+	border-radius: 0 !important;
+	background-color: $enabled-date-col !important;
+	&:hover {
+		background-color: $date-hover-col !important;
+		transition: 0.5s ease;
+		color: $white-text-col;
+	}
+}
+
+.disabled, .disabled-date {
+	background-color: $disabled-date-col !important;
+	&:hover {
+		background-color: $disabled-date-col !important;
+	}
 }

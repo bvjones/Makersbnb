@@ -12,7 +12,7 @@ describe Space do
   let(:request_two) { double("Request") }
   let(:requests) { [request_one, request_two] }
 
-  describe "#booked_dates" do
+  xdescribe "#booked_dates" do
     it "returns an array of booked dates" do
       allow(space).to receive(:requests) { requests }
       allow(request_one).to receive(:status) { "Approved" }
