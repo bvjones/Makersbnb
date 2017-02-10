@@ -78,7 +78,40 @@ root
 |----spec
 ```
 
+## How to use
 
+**Visit the homepage and click the sign up button**
+
+![alt tag](images/home_page.png)
+
+**Fill in your details**
+
+![alt tag](images/sign_up.png)
+
+**You will then be able to list a space**
+
+![alt tag](images/list_space.png)
+
+**You can make a request**
+
+![alt tag](images/book_stay.png)
+
+**You can view your requests**
+
+![alt tag](images/requests.png)
+
+**You can confirm or deny requests**
+
+![alt tag](images/confirm_or_deny.png)
+
+**View on mobile**
+
+![alt tag](images/mobile_screen.png)
+
+
+## Project management
+
+https://tree.taiga.io/project/rkclark-makersbnb/
 
 ## Collaborators
 - Mike Field-May
