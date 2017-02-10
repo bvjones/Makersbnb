@@ -11,6 +11,10 @@ feature 'FEATURE: Creating spaces' do
   let(:to) { "20/02/2017" }
   let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
 
+  before(:each) do
+    allow(Messenger).to receive(:call)
+  end
+
   scenario'user is able to add a new space' do
     sign_up
     visit '/'

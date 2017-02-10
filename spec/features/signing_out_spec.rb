@@ -1,9 +1,12 @@
 feature 'Signing out' do
+  before(:each) do
+    allow(Messenger).to receive(:call)
+  end
+
   describe 'when signed in' do
     scenario 'signing out as a user' do
       sign_up
       click_button 'Sign Out'
-
       expect(page).to have_content('goodbye!')
       expect(page).not_to have_content('Welcome fred')
     end

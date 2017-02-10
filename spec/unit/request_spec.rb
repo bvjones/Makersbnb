@@ -8,6 +8,10 @@ describe 'Request' do
   let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
 
 
+  before(:each) do
+    allow(Messenger).to receive(:call)
+  end
+
   describe "making a request" do
 
     it 'increases the request count by 1' do
