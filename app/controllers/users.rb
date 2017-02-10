@@ -12,7 +12,7 @@ class MakersBnB < Sinatra::Base
                         password_confirmation: params[:password_confirmation])
     if @user.save
       session[:user_id] = @user.id
-      Messenger.call(@user, "sign_up")
+      # Messenger.call(@user, "sign_up")
       redirect to('/')
     else
       flash.now[:errors] = @user.errors.full_messages
