@@ -11,7 +11,7 @@ feature "FEATURE: See Spaces" do
   let(:password_confirmation) { "rick" }
 
   before(:each) do
-    allow(SignupMessenger).to receive(:call)
+    allow(Messenger).to receive(:call)
   end
 
   scenario "Home page redirects to /spaces" do

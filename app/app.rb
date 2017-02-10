@@ -10,6 +10,6 @@ require_relative 'controllers/users.rb'
 require_relative 'controllers/spaces.rb'
 require_relative 'controllers/sessions.rb'
 require_relative 'controllers/requests.rb'
-require './lib/signup_messenger'
+require './lib/messenger'
 
 MakersBnB.run! if $0 == 'app/app.rb'

@@ -11,7 +11,7 @@ feature 'FEATURE: Creating spaces' do
   let(:to) { "20/02/2017" }
 
   before(:each) do
-    allow(SignupMessenger).to receive(:call)
+    allow(Messenger).to receive(:call)
   end
 
   scenario'user is able to add a new space' do

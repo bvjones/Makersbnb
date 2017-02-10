@@ -1,6 +1,6 @@
 describe 'FEATURE: Signing up' do
   before(:each) do
-    allow(SignupMessenger).to receive(:call)
+    allow(Messenger).to receive(:call)
   end
 
   scenario 'user can sign up' do

@@ -12,7 +12,7 @@ feature 'FEATURE: Creating a request' do
   let(:password_confirmation) { "rick" }
 
   before(:each) do
-    allow(SignupMessenger).to receive(:call)
+    allow(Messenger).to receive(:call)
   end
 
   scenario 'when not logged in' do

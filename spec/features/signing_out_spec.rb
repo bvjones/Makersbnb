@@ -1,6 +1,6 @@
 feature 'Signing out' do
   before(:each) do
-    allow(SignupMessenger).to receive(:call)
+    allow(Messenger).to receive(:call)
   end
 
   describe 'when signed in' do

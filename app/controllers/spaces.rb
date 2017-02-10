@@ -25,6 +25,7 @@ class MakersBnB < Sinatra::Base
                                        to: params[:to]
                                       )
     if space.save
+      Messenger.call(current_user, "create_new_space")
       redirect '/'
     else
       flash[:error] = space.errors.full_messages

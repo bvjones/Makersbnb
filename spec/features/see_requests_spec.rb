@@ -11,7 +11,7 @@ describe 'FEATURE: Requests view' do
     let(:to) { "20/02/2017" }
 
     before(:each) do
-      allow(SignupMessenger).to receive(:call)
+      allow(Messenger).to receive(:call)
     end
 
   scenario 'when logged in, a user is able to see received requests', :js => true do
