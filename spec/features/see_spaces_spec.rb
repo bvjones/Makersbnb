@@ -10,6 +10,10 @@ feature "FEATURE: See Spaces" do
   let(:password_digest) { "rick" }
   let(:password_confirmation) { "rick" }
 
+  before(:each) do
+    allow(SignupMessenger).to receive(:call)
+  end
+
   scenario "Home page redirects to /spaces" do
     visit('/')
     expect(page).to have_current_path('/spaces')

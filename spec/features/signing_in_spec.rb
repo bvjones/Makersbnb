@@ -1,4 +1,9 @@
 feature "FEATURE: signing in" do
+
+  before(:each) do
+    allow(SignupMessenger).to receive(:call)
+  end
+
   describe 'when not signed in' do
     scenario "signing in as an existing user" do
       sign_up
@@ -8,6 +13,7 @@ feature "FEATURE: signing in" do
       click_button 'Sign In'
       expect(page).to have_content('fred')
     end
+    
     scenario "signing in with an incorrect password" do
       sign_up
       visit '/sessions/new'

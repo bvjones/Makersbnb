@@ -6,6 +6,10 @@ feature "FEATURE: view single request" do
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
 
+  before(:each) do
+    allow(SignupMessenger).to receive(:call)
+  end
+
   # before(:each, js: true) do
   #   sign_up
   #   create_new_space(name: name, description: description, price: price, from: from, to: to)

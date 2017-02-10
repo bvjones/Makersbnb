@@ -6,6 +6,10 @@ feature "FEATURE: view single space" do
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
 
+  before(:each) do
+    allow(SignupMessenger).to receive(:call)
+  end
+
   scenario "Create space then view its spaces page" do
     visit('/')
     sign_up

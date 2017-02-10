@@ -11,6 +11,10 @@ feature 'FEATURE: Creating a request' do
   let(:password_digest) { "rick" }
   let(:password_confirmation) { "rick" }
 
+  before(:each) do
+    allow(SignupMessenger).to receive(:call)
+  end
+
   scenario 'when not logged in' do
     sign_up
     create_new_space(name: name, description: description, price: price, from: from, to: to)

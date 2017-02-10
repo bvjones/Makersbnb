@@ -6,6 +6,10 @@ describe 'Request' do
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
 
+  before(:each) do
+    allow(SignupMessenger).to receive(:call)
+  end
+
   describe "making a request" do
 
     it 'increases the request count by 1' do

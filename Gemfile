@@ -10,6 +10,8 @@ gem 'dm-postgres-adapter'
 gem 'dm-transactions'
 gem 'bcrypt'
 gem 'rake'
+gem 'mailgun-ruby'
+gem 'dotenv'
 
 group :test do
   gem 'rspec'
