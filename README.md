@@ -18,47 +18,67 @@ A practice group project based on Air BnB
 As a user,
 I want to be able to sign up for MakersBnB,
 so that I can access the services of the site
-```
-```
+
 As a user,
 I want to be able to log into MakersBnB,
 so that I can access my profile.
-```
-```
+
 As a user,
 I want to be able to logout from MakersBnB,
 so I can protect the security of my account.
-```
-```
+
 As a user,
 I want to be able to list a new space,
 so that I can rent it to others.
-```
-```
+
 As a user,
 I want to be able to see available spaces,
 so that I can choose one to rent.
-```
-```
+
 As a user,
 I want to be able to request to hire a space,
 so that I can stay there.
-```
-```
+
 As a user,
 I want to be able to see my received and made hire requests,
 so that I can take relevant actions.
-```
-```
+
 As a user,
 I want to be able to approve/deny a hire request,
 so that I can hire out my space.
-```
-```
+
 As a user,
 I want to only be able to select available dates when requesting to hire a space,
 so that the space is not double booked.
 ```
+
+## Setup
+```
+- $ git clone git@github.com:mikefieldmay/makersbnb.git
+- $ gem install bundler
+- $ bundler
+- $ create:db makersbnb_test
+- $ create:db makersbnb_development
+- $ brew install phantomjs
+```
+
+## Folder structure, models and libraries
+```
+root
+|
+|----app
+|     |
+|     |----controllers
+|     |----models
+|     |----public
+|     |----views
+|
+|----lib
+|----sass
+|----spec
+```
+
+
 
 ## Collaborators
 - Mike Field-May
