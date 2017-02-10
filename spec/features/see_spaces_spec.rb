@@ -4,6 +4,7 @@ feature "FEATURE: See Spaces" do
   let(:price) { 200 }
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
+  let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
   let(:test_user) { "Rick" }
   let(:username) { "RICK" }
   let(:email) { "rick@rick.com" }
@@ -18,7 +19,7 @@ feature "FEATURE: See Spaces" do
   scenario "on the spaces page" do
     visit('/')
     sign_up
-    create_new_space(name: name, description: description, price: price, from: from, to: to)
+    create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
     expect(page).to have_content("Pedro's House")
     expect(page).to have_content("Very nice")
     expect(page).to have_content(200)
@@ -37,7 +38,8 @@ feature "FEATURE: See Spaces" do
                                          description: description,
                                          price: price,
                                          from: from,
-                                         to:  to
+                                         to:  to,
+                                         image_url: image_url
                                         )
     end
     visit('/')

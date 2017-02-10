@@ -5,6 +5,7 @@ feature 'FEATURE: Creating a request' do
   let(:price) { 200 }
   let(:from) { "20/02/2017" }
   let(:to) { "20/05/2017" }
+  let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
   let(:test_user) { "Rick" }
   let(:username) { "RICK" }
   let(:email) { "rick@rick.com" }
@@ -13,7 +14,7 @@ feature 'FEATURE: Creating a request' do
 
   scenario 'when not logged in' do
     sign_up
-    create_new_space(name: name, description: description, price: price, from: from, to: to)
+    create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
     click_button("Sign Out")
     visit '/'
     click_link("Pedro's House")
@@ -22,7 +23,7 @@ feature 'FEATURE: Creating a request' do
 
   scenario 'logged in user is able to book', :js => true do
     sign_up
-    create_new_space(name: name, description: description, price: price, from: from, to: to)
+    create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
     space_id = Space.first.id
     visit "/spaces/#{space_id}"
     page.execute_script("$('#hidden_date').val('21/02/2017')")
@@ -40,7 +41,8 @@ feature 'FEATURE: Creating a request' do
                                          description: description,
                                          price: price,
                                          from: from,
-                                         to:  to
+                                         to:  to,
+                                         image_url: image_url
                                         )
     space_id = Space.first.id
     existing_request = Request.create(date: "25/03/2017",

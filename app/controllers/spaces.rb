@@ -22,7 +22,8 @@ class MakersBnB < Sinatra::Base
                                        description: params[:description],
                                        price: params[:price],
                                        from: params[:from],
-                                       to: params[:to]
+                                       to: params[:to],
+                                       image_url: params[:image_url]
                                       )
     if space.save
       redirect '/'

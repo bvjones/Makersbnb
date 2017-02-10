@@ -3,10 +3,15 @@
     <div class="col-12 space my-1">
       <a href="/spaces/<%= space.id %>">
       <div class="card">
-        <div class="card-block">
-          <h4 class="card-title"><%= space.name %></h4>
-          <h6 class="card-subtitle mb-2 text-muted">Listed by - <%= space.user.name %></h6>
-          <p class="card-text text-center"><%= space.description %></p>
+        <div class="card-block row">
+          <div class="col-12 col-md-6">
+            <h4 class="card-title"><%= space.name %></h4>
+            <h6 class="card-subtitle mb-2 text-muted">Listed by - <%= space.user.name %></h6>
+            <p class="card-text text-center"><%= space.description.length > 400 ? "#{space.description.slice(0..400)}&hellip;" : space.description %></p>
+          </div>
+          <div class="col-12 col-md-6 space-image-holder">
+            <img class="img-fluid" src=<%= space.image_url %> alt="Space image">
+          </div>
         </div>
         <div class="card-footer">
           <div class="row">

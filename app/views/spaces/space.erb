@@ -6,16 +6,17 @@
     <div class="col-12 space my-1">
       <div class="card">
         <h2 class="card-header text-center"><%= @space.name %></h2>
-        <div class="card-block">
-          <h6 class="card-subtitle mb-2 text-muted">Listed by - <%= @space.user.name %></h6>
-          <p class="card-text text-center"><%= @space.description %></p>
-          <div class="row text-center pb-3">
-            <div class="col-6">
-              <p class="card-text">Available from - <%= @space.from.strftime("%d/%m/%y")%> to <%= @space.to.strftime("%d/%m/%y")%></p>
+        <div class="card-block row">
+          <div class="col-12 col-md-6">
+            <h5 class="card-subtitle mb-2 text-muted">Listed by - <%= @space.user.name %></h5>
+            <p class="card-text text-center"><%= @space.description %></p>
+            <label class="col-12 text-center mb-0 label-line-height" for='date'><i><b>Select the night of your stay&hellip;</i></b></label>
+            <div class="col-12" id='space_datepicker' data-date-start-date=<%= @space.from.strftime("%d/%m/%Y") %> data-date-end-date=<%= @space.to.strftime("%d/%m/%Y")%> data-date-dates-disabled='<%= @space.booked_dates %>'>
             </div>
-            <div class="col-6">
-              <p class="card-text">Price per night £<%= @space.price %></p>
-            </div>
+          </div>
+          <div class="col-12 col-md-6 space-image-holder d-flex flex-column justify-content-center">
+            <h4 class="text-center my-3">Price per night £<%= @space.price %></h4>
+            <img class="img-fluid" src=<%= @space.image_url %> alt="Space image">
           </div>
         </div>
           <div class="row">
@@ -23,9 +24,7 @@
                 <%if current_user%>
                 <form action='/requests' method='post'>
                   <div class="form-group row">
-                    <label class="col-12 text-center mb-0 label-line-height" for='date'>Staying the Night Of</label>
-                    <div class="col-12" id='space_datepicker' data-date-start-date=<%= @space.from.strftime("%d/%m/%Y") %> data-date-end-date=<%= @space.to.strftime("%d/%m/%Y")%> data-date-dates-disabled='<%= @space.booked_dates %>'>
-                    </div>
+
                     <input class="form-control col-12" id='hidden_date' type='hidden' name='date' required>
                     <input type="hidden" name="space_id" value="<%=@space.id%>"/>
                   </div>
@@ -42,3 +41,13 @@
     </div>
   </div>
 </div>
+
+
+<!-- <div class="row text-center pb-3">
+  <div class="col-6">
+    <p class="card-text">Available from - <%= @space.from.strftime("%d/%m/%y")%> to <%= @space.to.strftime("%d/%m/%y")%></p>
+  </div>
+  <div class="col-6">
+    <p class="card-text">Price per night £<%= @space.price %></p>
+  </div>
+</div> -->

@@ -10,6 +10,7 @@ class Space
   property :price, Integer, required: true
   property :from, Date, required: true
   property :to, Date, required: true
+  property :image_url, Text, required: true
 
   belongs_to :user
   has n, :requests

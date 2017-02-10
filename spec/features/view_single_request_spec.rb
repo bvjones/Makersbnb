@@ -5,22 +5,11 @@ feature "FEATURE: view single request" do
   let(:price) { 200 }
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
-
-  # before(:each, js: true) do
-  #   sign_up
-  #   create_new_space(name: name, description: description, price: price, from: from, to: to)
-  #   click_button('Sign Out')
-  #   sign_up_user_two
-  #   make_book(Space.first.id)
-  #   click_button('Sign Out')
-  #   sign_in
-  #   click_link("Requests")
-  #   click_link("Pedro's House")
-  # end
+  let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
 
   scenario "create a request and review its request page", js: true do
     sign_up
-    create_new_space(name: name, description: description, price: price, from: from, to: to)
+    create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
     click_button('Sign Out')
     sign_up_user_two
     make_book(Space.first.id)
@@ -34,7 +23,7 @@ feature "FEATURE: view single request" do
   feature 'approving a request' do
     scenario 'it changes the request status', js: true do
       sign_up
-      create_new_space(name: name, description: description, price: price, from: from, to: to)
+      create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
       click_button('Sign Out')
       sign_up_user_two
       make_book(Space.first.id)
@@ -47,7 +36,7 @@ feature "FEATURE: view single request" do
     end
     scenario 'it tells us the Request has been approved', js: true do
       sign_up
-      create_new_space(name: name, description: description, price: price, from: from, to: to)
+      create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
       click_button('Sign Out')
       sign_up_user_two
       make_book(Space.first.id)
@@ -62,7 +51,7 @@ feature "FEATURE: view single request" do
 
   scenario 'denying a request', js: true do
     sign_up
-    create_new_space(name: name, description: description, price: price, from: from, to: to)
+    create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
     click_button('Sign Out')
     sign_up_user_two
     make_book(Space.first.id)
@@ -75,7 +64,7 @@ feature "FEATURE: view single request" do
   end
   scenario 'it tells us the Request has been denied', js: true do
     sign_up
-    create_new_space(name: name, description: description, price: price, from: from, to: to)
+    create_new_space(name: name, description: description, price: price, from: from, to: to, image_url: image_url)
     click_button('Sign Out')
     sign_up_user_two
     make_book(Space.first.id)
