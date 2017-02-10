@@ -12,6 +12,7 @@ class MakersBnB < Sinatra::Base
       redirect '/'
     else
       flash.keep[:error] = ["The selected date is not available"]
+      @background_class = "requests-background"
       redirect '/requests'
     end
   end
@@ -19,11 +20,13 @@ class MakersBnB < Sinatra::Base
   get '/requests' do
     @received_requests = current_user.spaces.requests
     @made_requests = current_user.requests
+    @background_class = "requests-background"
     erb :'requests/requests'
   end
 
   get '/requests/:id' do
     @single_request = Request.get(params['id'])
+    @background_class = "request-background"
     erb :'requests/request'
   end
 

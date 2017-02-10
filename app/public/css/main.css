@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%; }
 
 .container-top-margin {
-  margin-top: 15%; }
+  margin-top: 5%; }
 
 .btn {
   cursor: pointer;
@@ -97,33 +97,42 @@ form .btn {
   color: white; }
   .form-sign-up .row {
     margin-right: auto; }
-
-label {
-  text-shadow: 0px 0px 6px black; }
+  .form-sign-up .label {
+    text-shadow: 0px 0px 6px black; }
 
 .index-background {
-  background: url("/img/home-bkgrnd.jpg");
-  background-size: cover;
-  background-repeat: repeat-y; }
+  background-image: url("/img/home-bkgrnd.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
 
 .space-background {
   background: url("/img/space-background.jpg");
-  background-size: cover;
-  background-repeat: repeat-y; }
+  background-attachment: fixed;
+  background-size: cover; }
 
 .sign-in-background {
-  background: url("/img/sign-in-background.jpg");
-  background-size: cover;
-  background-repeat: repeat-y; }
+  background: url("/img/home4-background.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
 
 .sign-up-background {
   background: url("/img/sign-up-background.jpg");
-  background-size: cover;
-  background-repeat: repeat-y; }
+  background-attachment: fixed;
+  background-size: cover; }
 
 .list-new-space-background {
   background: url("/img/list-new-space-background.jpg");
-  background-size: cover;
-  background-repeat: repeat-y; }
+  background-attachment: fixed;
+  background-size: cover; }
+
+.request-background {
+  background: url("/img/request-background.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.requests-background {
+  background: url("/img/requests-background.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

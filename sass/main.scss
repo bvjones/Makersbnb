@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-top-margin {
-	margin-top: 15%;
+	margin-top: 5%;
 }
 
 .btn {
@@ -159,42 +159,52 @@ form {
 	color: $white-text-col;
 	.row {
 		margin-right: auto;
-
 	}
-}
-
-label {
-	text-shadow: 0px 0px 6px $text-pop;
+	.label {
+		text-shadow: 0px 0px 6px $text-pop;
+	}
 }
 
 // BACKGROUND STYLES
 
 .index-background {
-	background: url("/img/home-bkgrnd.jpg");
+	background-image: url("/img/home-bkgrnd.jpg");
+	background-attachment: fixed;
 	background-size: cover;
-	background-repeat: repeat-y;
 }
 
 .space-background {
 	background: url("/img/space-background.jpg");
+	background-attachment: fixed;
 	background-size: cover;
-	background-repeat: repeat-y;
 }
 
 .sign-in-background {
-	background: url("/img/sign-in-background.jpg");
+	background: url("/img/home4-background.jpg");
+	background-attachment: fixed;
 	background-size: cover;
-	background-repeat: repeat-y;
 }
 
 .sign-up-background {
 	background: url("/img/sign-up-background.jpg");
+	background-attachment: fixed;
 	background-size: cover;
-	background-repeat: repeat-y;
 }
 
 .list-new-space-background {
 	background: url("/img/list-new-space-background.jpg");
+	background-attachment: fixed;
 	background-size: cover;
-	background-repeat: repeat-y;
+}
+
+.request-background {
+	background: url("/img/request-background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.requests-background {
+	background: url("/img/requests-background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
 }
