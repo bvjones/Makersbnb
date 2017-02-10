@@ -55,6 +55,10 @@ form .btn {
 .navbar-brand {
   font-size: 1.6rem; }
 
+.card-footer, .card-header {
+  background-color: #CC6600 !important;
+  color: white; }
+
 .space a {
   color: inherit; }
   .space a:hover {
@@ -86,6 +90,16 @@ form .btn {
   background-color: #9a9a9a !important; }
   .disabled:hover, .disabled-date:hover {
     background-color: #9a9a9a !important; }
+
+.form-sign-up {
+  margin: 0 auto;
+  background-color: rgba(65, 64, 64, 0.47);
+  color: white; }
+  .form-sign-up .row {
+    margin-right: auto; }
+
+label {
+  text-shadow: 0px 0px 6px black; }
 
 .index-background {
   background: url("/img/home-bkgrnd.jpg");
