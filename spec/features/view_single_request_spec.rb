@@ -6,6 +6,9 @@ feature "FEATURE: view single request" do
   let(:from) { "20/03/2017" }
   let(:to) { "20/02/2017" }
   let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
+  before(:each) do
+    allow(Messenger).to receive(:call)
+  end
 
   scenario "create a request and review its request page", js: true do
     sign_up

@@ -8,6 +8,10 @@ feature "FEATURE: view single space" do
   let(:image_url) { "http://cdn.freshome.com/wp-content/uploads/2012/10/bes-small-apartments-designs-ideas-image-17.jpg" }
 
 
+  before(:each) do
+    allow(Messenger).to receive(:call)
+  end
+
   scenario "Create space then view its spaces page" do
     visit('/')
     sign_up
