@@ -1,15 +1,15 @@
 <% if flash[:error] %>
   <% flash[:error].each do |e| %>
-    <p><%= e + "." %></p>
+    <p class="translucent-background py-3"><%= e + "." %></p>
   <% end %>
 <% end %>
 <% if flash[:errors] %>
   <% flash[:errors].each do |e| %>
-    <p><%= e + "." %></p>
+    <p class="translucent-background py-3"><%= e + "." %></p>
   <% end %>
 <% end %>
 <% if flash[:notice] %>
-  <div id='notice'>
+  <div class="translucent-background py-3" id='notice'>
     <%= flash[:notice] %>
   </div>
 <% end %>

@@ -135,4 +135,9 @@ form .btn {
   background-attachment: fixed;
   background-size: cover; }
 
+.translucent-background {
+  background-color: rgba(65, 64, 64, 0.47);
+  color: white;
+  text-shadow: 0px 0px 6px black; }
+
 /*# sourceMappingURL=main.css.map */

@@ -9,7 +9,7 @@ $disabled-date-col: rgb(154, 154, 154);
 $enabled-date-col: rgb(255, 255, 255);
 $date-hover-col: $main-tint;
 $white-text-col: rgb(255, 255, 255);
-$translucent-form: rgba(65, 64, 64, 0.47);
+$translucent-form-col: rgba(65, 64, 64, 0.47);
 $text-pop: rgb(0, 0, 0);
 
 //GENERAL STYLES
@@ -155,7 +155,7 @@ form {
 
 .form-sign-up {
 	margin: 0 auto;
-	background-color: $translucent-form;
+	background-color: $translucent-form-col;
 	color: $white-text-col;
 	.row {
 		margin-right: auto;
@@ -207,4 +207,12 @@ form {
 	background: url("/img/requests-background.jpg");
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+// FLASH ERROR PARTIAL
+
+.translucent-background {
+	background-color: $translucent-form-col;
+	color: $white-text-col;
+	text-shadow: 0px 0px 6px $text-pop;
 }
