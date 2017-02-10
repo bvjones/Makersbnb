@@ -1,8 +1,8 @@
-<nav class="navbar navbar-toggleable-md main-tint-bkgrnd light-text py-3">
+<nav class="navbar navbar-toggleable-md main-tint-bkgrnd navbar-inverse light-text py-3">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="/">MakersBnB</a>
+  <a class="navbar-brand" href="/"><img src="/img/home_icon.svg" class="home-icon mr-2 d-inline-block align-top" alt="Home page icon">MakersBnB</a>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <%if current_user%>
@@ -14,7 +14,7 @@
         </li>
         <form action="/sessions" method="post">
           <input type="hidden" name="_method" value="delete">
-          <button class="btn mx-1 sign_out nav-link" type="submit" name="sign_out" id="sign_out">Sign Out</button>
+          <button class="btn mx-1 px-2 sign_out nav-link" type="submit" name="sign_out" id="sign_out">Sign Out: <%=@current_user.username%></button>
         </form>
       <%else%>
         <li class="nav-item">

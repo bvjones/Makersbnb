@@ -49,15 +49,41 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.navbar {
+	form {
+		margin-left: auto;
+		margin-right: auto;
+		.btn {
+			background: $red-tint;
+			color: $white-text-col !important;
+			&:hover{
+				background-color: $bright-tint;
+				transition: 0.7s ease;
+			}
+		}
+	}
+}
+
 .main-tint-bkgrnd {
 	background-color: $main-tint;
 }
 
 .light-text {
-	color: $white-text-col;
+	color: $white-text-col !important;
 	a {
-		color: $white-text-col;
+		color: $white-text-col !important;
 	}
+}
+
+//NAV STYLES
+
+.home-icon {
+	height: 35px;
+	width: 35px;
+}
+
+.navbar-brand {
+	font-size: 1.6rem;
 }
 
 //SPACES VIEW STYLES
